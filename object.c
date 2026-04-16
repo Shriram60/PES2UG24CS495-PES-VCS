@@ -44,7 +44,7 @@ void compute_hash(const void *data, size_t len, ObjectID *id_out) {
     EVP_DigestFinal_ex(ctx, id_out->hash, &hash_len);
     EVP_MD_CTX_free(ctx);
 }
-
+//phas 1 done
 // Get the filesystem path where an object should be stored.
 // Format: .pes/objects/XX/YYYYYYYY...
 // The first 2 hex chars form the shard directory; the rest is the filename.
